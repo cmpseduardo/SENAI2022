@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+navbar{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(199, 199, 199);
+}
+
+navbar > .navbar-right{
+    padding-left: 40%;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35vh;
+}
+
+.modelo{
+    visibility: hidden;
+}
+
+.produtos{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 200px;
+    background-color: rgb(212, 212, 212);
+}
+
+.campo-1{
+    margin-top: 10px;
+    margin-left: 10px;
+ 
+}
+
+#nome-produto{
+    font-size: 20px;
+}
+
+#preco-produto{
+    margin-left: 11.5px;
+    margin-top: -20px;
+}
+
+.campo-1 > #imagem-carrinho{
+    margin-left: 160px;
+}
