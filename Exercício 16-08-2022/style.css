@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.model{
+    display: none;
+    visibility: hidden;
+}
+
+header{
+    background-color: rgb(0, 174, 255);
+    color: white;
+}
+
+#name-user-header{
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.post{
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 750px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#name-user{
+    color: rgb(0, 174, 255);
+}
+
+#title-post{
+    font-weight: bold;
+    font-size: 20px;
+}
