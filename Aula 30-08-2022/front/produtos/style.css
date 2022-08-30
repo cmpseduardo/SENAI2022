@@ -1,0 +1,45 @@
+.produto{
+    border: 1px solid #F5F5;
+    border-radius: 20px;
+    width: 150px;
+    padding: 30px;
+}
+
+.model{
+    display: none;
+    visibility: hidden;
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(6, 6, 6, .5);
+}
+
+.form-modal{
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 120px;
+
+}
+
+.form-modal > input, button {
+    margin: 15px 0;
+}
+
+#cancel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
