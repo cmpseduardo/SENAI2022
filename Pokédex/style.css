@@ -1,0 +1,31 @@
+:root {
+    --normal: #ccc;
+    --ground: #ba8b65;
+    --fighting: #fcc;
+    --flying: #ccf;
+    --poison: #bf7ad6;
+    --ground: #ba8b65;
+    --rock: #888;
+    --bug: #d0fc6f;
+    --ghost: #d8c9f5;
+    --steel: #cfcfcf;
+    --fire: #f77a5e;
+    --water: #a4d7eb;
+    --grass: #aaeba4;
+    --electric: #faed75;
+    --psychic: #fa9bec;
+    --ice: #9ff5ec;
+    --dragon: #ffedc9;
+    --dark: #8f76c4;
+    --fairy: #fcc5f9;
+    --default: red;
+}
+
+.card {
+    background-color: var(--ground);
+}
+
+.modelo{
+    visibility: hidden;
+    display: none;
+}
