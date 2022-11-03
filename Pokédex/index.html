@@ -9,16 +9,28 @@
     <title>Pokédex</title>
 </head>
 <body onLoad = "carregar()">
+
+    <header>
+        <navbar>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" height = "50px" width = "50px">
+            <input type = "text" placeholder = "Qual Pokémon você busca?" />
+        </navbar>
+    </header>
+    
     <main>
-        <div class = "card modelo">
-            <span id = "nome">Nome</span>
-            <img class = "pokeimg" id="pokeimg" alt="">
-            <div class = "info">
-                <span id = "altura">Altura: </span>
-                <span id = "peso">Peso: </span>
-                <span id = "habilidades">Habilidades: </span>
-             </div>
+        <div class = "cards">
+            <div class = "card modelo">
+                <span id = "nome">Nome</span>
+                <img class = "pokeimg" id="pokeimg" alt="">
+                <div class = "info">
+                    <span id = "altura">Altura: </span>
+                    <span id = "peso">Peso: </span>
+                    <span id = "habilidades">Habilidades: </span>
+                </div>
+            </div>
          </div>
+         <button id = "ver-mais" onclick="verMais()">+</button>
     </main>
+
 </body>
 </html>

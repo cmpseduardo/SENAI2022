@@ -1,7 +1,9 @@
 var itemCard = document.querySelector(".card")
+var i = 1
+var contador = 10
 
 function carregar(){
-    for(i = 1; i <= 100; i++){
+    for(i; i <= contador; i++){
         fetch("https://pokeapi.co/api/v2/pokemon/" + i)
         .then((response) => {
             return response.json()
@@ -21,16 +23,25 @@ function carregar(){
             novoItem.style.backgroundColor = `var(--${data.types[0].type.name})`
             nome.innerHTML = data.name;   
             novoItem.querySelector('.pokeimg').src = data.sprites.versions['generation-v']['black-white'].animated.front_default
+
             altura.innerHTML += (data.height * 10) + 'cm'
             peso.innerHTML += (data.weight / 10) + 'kg'
+
             habilidades = data.abilities.forEach(a =>{
                 let span = document.createElement('span')
-                span.innerHTML = a.ability.name
+                span.innerHTML = a.ability.name + ";"
+                span.style.marginRight = '0.5rem'
                 novoItem.querySelector('#habilidades').appendChild(span)
             })
 
-            document.querySelector("main").appendChild(novoItem);
+            document.querySelector(".cards").appendChild(novoItem);
         })
     }
     
+}
+
+function verMais(){
+    contador = contador + 20
+    i = i + 10
+    carregar()
 }
